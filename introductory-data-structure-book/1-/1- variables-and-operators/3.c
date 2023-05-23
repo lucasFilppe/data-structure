@@ -16,9 +16,13 @@ int main(){
     printf("Digite o numero de segundos trascorridos em um evento: ");
     scanf("%d", &numSegundos);
     
-    int minutos = numSegundos / 60;
-    
-    printf("%d minutos\n", minutos);
+   int minutos = numSegundos / 60;
+    int horas = minutos * 60 / 3600;
+    float segundos = numSegundos;  
+
+    printf("%.02d horas\n", horas);
+    printf("%.02d minutos\n", minutos);
+    printf("%05.2f segundos\n", segundos);
     
     return 0;
 }
