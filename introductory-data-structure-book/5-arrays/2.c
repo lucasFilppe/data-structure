@@ -6,7 +6,7 @@ Escreva um programa para testar sua função.
 void inverte (int n, int * vet)*/
 #include <stdio.h>
 void inverte (int n, int * vet){
-  int invert[n];
+  int invert[100];
   for (int i = 0; i < n; i++)
   {
     invert[i] = vet[n - 1];
